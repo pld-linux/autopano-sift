@@ -15,6 +15,7 @@ BuildRequires:	dotnet-gtk-sharp-devel >= 1.0
 BuildRequires:	mono-csharp >= 1.0
 Requires:	dotnet-gtk-sharp >= 1.0
 Requires:	libgdiplus >= 1.0
+ExclusiveArch:	%{ix86} amd64 arm hppa ppc s390 sparc sparcv9 sparc64
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
