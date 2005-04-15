@@ -4,12 +4,12 @@
 Summary:	SIFT Feature Detection implementation
 Summary(pl):	Implementacja algorytmu SIFT do wykrywania cech obrazu
 Name:		autopano-sift
-Version:	2.2
+Version:	2.3
 Release:	1
 License:	GPL, but SIFT algorithm may require license in some countries
 Group:		X11/Applications/Graphics
 Source0:	http://user.cs.tu-berlin.de/~nowozin/autopano-sift/%{name}-%{version}.tar.gz
-# Source0-md5:	fb3f111d3054c67a66e3ead181f99aa9
+# Source0-md5:	8ac462fbd538a8ddad3df1088347575f
 URL:		http://user.cs.tu-berlin.de/~nowozin/autopano-sift/
 BuildRequires:	dotnet-gtk-sharp-devel >= 1.0
 BuildRequires:	mono-csharp >= 1.0
