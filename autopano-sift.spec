@@ -11,11 +11,12 @@ Group:		X11/Applications/Graphics
 Source0:	http://user.cs.tu-berlin.de/~nowozin/autopano-sift/%{name}-%{version}.tar.gz
 # Source0-md5:	8ac462fbd538a8ddad3df1088347575f
 URL:		http://user.cs.tu-berlin.de/~nowozin/autopano-sift/
+# uses {glib,atk,gdk,gtk,glade}-sharp
 BuildRequires:	dotnet-gtk-sharp-devel >= 1.0
 BuildRequires:	mono-csharp >= 1.0
 Requires:	dotnet-gtk-sharp >= 1.0
 Requires:	libgdiplus >= 1.0
-ExclusiveArch:	%{ix86} amd64 arm hppa ppc s390 sparc sparcv9 sparc64
+ExclusiveArch:	%{ix86} alpha amd64 arm hppa ppc s390 sparc sparcv9 sparc64
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
