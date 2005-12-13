@@ -1,11 +1,12 @@
 # NOTE: libsift is also available separately at
 # http://user.cs.tu-berlin.de/~nowozin/libsift/
 # it should be separate package when other packages use it
+%include	/usr/lib/rpm/macros.mono
 Summary:	SIFT Feature Detection implementation
 Summary(pl):	Implementacja algorytmu SIFT do wykrywania cech obrazu
 Name:		autopano-sift
 Version:	2.4
-Release:	1
+Release:	2
 License:	GPL, but SIFT algorithm may require license in some countries
 Group:		X11/Applications/Graphics
 Source0:	http://user.cs.tu-berlin.de/~nowozin/autopano-sift/%{name}-%{version}.tar.gz
@@ -14,9 +15,11 @@ URL:		http://user.cs.tu-berlin.de/~nowozin/autopano-sift/
 # uses {glib,atk,gdk,gtk,glade}-sharp
 BuildRequires:	dotnet-gtk-sharp-devel >= 1.0
 BuildRequires:	mono-csharp >= 1.0
+BuildRequires:	rpmbuild(monoautodeps)
 Requires:	dotnet-gtk-sharp >= 1.0
 Requires:	libgdiplus >= 1.0
-ExclusiveArch:	%{ix86} %{x8664} alpha arm hppa ppc s390 sparc sparcv9 sparc64
+ExclusiveArch:	%{ix86} %{x8664} arm hppa ppc s390
+ExcludeArch:	i386
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
