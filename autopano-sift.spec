@@ -3,7 +3,7 @@
 # it should be separate package when other packages use it
 %include	/usr/lib/rpm/macros.mono
 Summary:	SIFT Feature Detection implementation
-Summary(pl):	Implementacja algorytmu SIFT do wykrywania cech obrazu
+Summary(pl.UTF-8):   Implementacja algorytmu SIFT do wykrywania cech obrazu
 Name:		autopano-sift
 Version:	2.4
 Release:	2
@@ -39,23 +39,23 @@ and the same image location in two images. The output is created as
 project file for the hugin panorama stitching software, which is
 available in hugin package.
 
-%description -l pl
-Algorytm SIFT daje mo¿liwo¶æ okre¶lenia kluczowych punktów
-charakterystycznych na dowolnych zdjêciach. Nastêpnie wydobywa
-informacje wyodrêbniaj±ce dla ka¿dego takiego punktu i pozwala
-scharakteryzowaæ ten punkt niezale¿nie od liczby modyfikacji obrazu.
-Jest niezale¿ny od zmian kontrastu/jasno¶ci, obrotów, skalowania i
-czê¶ciowo niezale¿ny od innych rodzajów przekszta³ceñ. Algorytm mo¿e
-byæ elastycznie u¿ywany do tworzenia danych wej¶ciowych do
-dopasowywania obrazów, identyfikowania obiektów i innych algorytmów
-zwi±zanych z grafik± komputerow±.
+%description -l pl.UTF-8
+Algorytm SIFT daje moÅ¼liwoÅ›Ä‡ okreÅ›lenia kluczowych punktÃ³w
+charakterystycznych na dowolnych zdjÄ™ciach. NastÄ™pnie wydobywa
+informacje wyodrÄ™bniajÄ…ce dla kaÅ¼dego takiego punktu i pozwala
+scharakteryzowaÄ‡ ten punkt niezaleÅ¼nie od liczby modyfikacji obrazu.
+Jest niezaleÅ¼ny od zmian kontrastu/jasnoÅ›ci, obrotÃ³w, skalowania i
+czÄ™Å›ciowo niezaleÅ¼ny od innych rodzajÃ³w przeksztaÅ‚ceÅ„. Algorytm moÅ¼e
+byÄ‡ elastycznie uÅ¼ywany do tworzenia danych wejÅ›ciowych do
+dopasowywania obrazÃ³w, identyfikowania obiektÃ³w i innych algorytmÃ³w
+zwiÄ…zanych z grafikÄ… komputerowÄ….
 
-Ten pakiet dostarcza implementacjê algorytmu SIFT i zestaw narzêdzi
-wykorzystuj±cych ten algorytm do dopasowywania dwóch lub wiêkszej
-liczby zdjêæ. Na wyj¶ciu tworzony jest zbiór punktów kontrolnych
-okre¶laj±cych to samo miejsce na dwóch zdjêciach. Wyj¶cie jest
+Ten pakiet dostarcza implementacjÄ™ algorytmu SIFT i zestaw narzÄ™dzi
+wykorzystujÄ…cych ten algorytm do dopasowywania dwÃ³ch lub wiÄ™kszej
+liczby zdjÄ™Ä‡. Na wyjÅ›ciu tworzony jest zbiÃ³r punktÃ³w kontrolnych
+okreÅ›lajÄ…cych to samo miejsce na dwÃ³ch zdjÄ™ciach. WyjÅ›cie jest
 tworzone w formacie pliku projektu dla programu do sklejania panoram
-hugin, dostêpnego w pakiecie o tej samej nazwie.
+hugin, dostÄ™pnego w pakiecie o tej samej nazwie.
 
 %prep
 %setup -q 
