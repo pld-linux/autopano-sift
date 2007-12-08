@@ -60,7 +60,7 @@ hugin, dostępnego w pakiecie o tej samej nazwie.
 %setup -q 
 
 %build
-%{__make} -C src
+%{__make} -C src -j1
 
 %install
 rm -rf $RPM_BUILD_ROOT
