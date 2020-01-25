@@ -1,7 +1,6 @@
 # NOTE: libsift is also available separately at
 # http://user.cs.tu-berlin.de/~nowozin/libsift/
 # it should be separate package when other packages use it
-%include	/usr/lib/rpm/macros.mono
 Summary:	SIFT Feature Detection implementation
 Summary(pl.UTF-8):	Implementacja algorytmu SIFT do wykrywania cech obrazu
 Name:		autopano-sift
